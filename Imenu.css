@@ -1,9 +1,8 @@
 body{
-	background:url("indianbackground.jpeg") no-repeat center center fixed;
-	background-size: cover;
-	padding: 0
-	margin: 0
-	padding: 0;	
+	margin: 0;
+	padding: 0;
+    background-image:url("images/wooden-background.jpg");
+
 }
 header{
 	font-family: fantasy;

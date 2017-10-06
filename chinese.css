@@ -1,16 +1,15 @@
 body{
-	background:url("chineseback.jpeg") no-repeat center center fixed;
-	background-size: cover;
-	padding: 0
-	margin: 0
-	padding: 0;	
+	margin: 0;
+	padding: 0;
+    background-image:url("images/wooden-background.jpg");
+
 }
 header{
 	font-family: fantasy;
 	position: absolute;
 	text-align: center;
 	font-size: 30px;
-	color:white;
+	color:black;
 	font-weight: bold;
 }
 h1{
@@ -19,7 +18,7 @@ h1{
 	position: relative;
 	text-align: center;
 	font-size: 25px;
-	color:white;
+	color:black;
 	font-weight: bold;
 
 
