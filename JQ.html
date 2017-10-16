@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 class="banana">Practicing jQuery</h1>
+  <h1 id="apple">This text will hide</h1>
+  <img id="chinesedeliciousfood"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+$(".banana").click(function(){
+  $("#apple").hide();
+});
+  
+$("h1").click(function(){
+$("#chinesedeliciousfood").hide();
+})  
+
+});
+</script>
+</body>
+</html>
+
+/*
+
+Examples of events in jQuery:
+* .mouseout()
+* .keyup()
+* .hover()
+* .click()
+
+https://api.jquery.com/category/events/ 
+
+Types of Selectors
+
+1. Elements: "p", "h1", "img", etc.
+2. Classes: ".festivalpics", ".navitems"
+3. Id: : "#headerimg", ""
+
+Where to find the CDN links?
+https://www.w3schools.com/jquery/jquery_get_started.asp 
+
+*/
+
+
+<script>
+  $(document).ready(function(){
+  $(".anim").animate(function(){
+    var div = $("div");
+    div.animate({left: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+  });
+
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>

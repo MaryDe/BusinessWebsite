@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Menu List</title>
+	<title>Menu List India</title>
 	<meta charset="utf-8">
 <title>Menu</title>
 <link rel="stylesheet" type="text/css" href="chinese.css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
 </head>
 <body>
+  <div class="navigation">
+      <div class="dropdown">
+      <button class="dropbtn">MENU</button>
+      
+      <div class="dropdown-content">
+        
+        <a href="Imenu.html">INDIAN</a>
+        <a href="Cmenu.html">CHINESE</a>
+      </div>
+    </div> 
+    <a href="index.html">HOME</a>
+    <a href="about-us-page.html">ABOUT US</a>
+    <a href="order-now.html" target="block">ORDER NOW</a>
+    
+  </div> 
 <h1><italic> Forget the takeout—flavorful and fragrant, <br />true Chinese  food has a lightness, balance, <br />and simplicity that any home cook can easily master </italic></h1>
 
-<header><bold>From the East</bold </header>
-<div class="East">
+<header class='clickMe'><bold>From the East</bold </header>
+<div class="From The East">
     <table>
       <tr>
         <td><img src="images/mc1.jpg" class="image" style="width:"180" height="180"></td>
@@ -40,7 +57,19 @@
           <td><p>Butchi<b>$ 10.00</b>></p></td>
           <td><p>Japanese Swiss Roll <b>$ 10.00</b>></p></td>
           <td><p>Rainbow Cake <b>$ 10.00</b>></p></td>
+
         </tr>
     </table>
+
   </div>
+  <script>
+    $('document').ready($('div').hide().show(1000));
+    
+    $('.clickMe').click( function(){
+    $('h1').toggle(1000);
+    $('document').ready($('.taste').hide().show(1000));
+    
+    });
+   
+  </script>
 </body>
