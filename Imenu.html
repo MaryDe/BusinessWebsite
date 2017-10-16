@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Menu List</title>
+	<title>Menu List Chinese</title>
 	<meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
 <title>Menu</title>
 <link rel="stylesheet" type="text/css" href="Imenu.css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<link href="https://fonts.googleapis.com/
+css?family=Inconsolata" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
-  <div class="header">
-  <div class="logo">
-    <img src="images/m&mlogo.png">
-  </div>
+
   <div class="navigation">
       <div class="dropdown">
       <button class="dropbtn">MENU</button>
@@ -28,13 +28,12 @@
     <a href="about-us-page.html">ABOUT US</a>
     <a href="order-now.html" target="block">ORDER NOW</a>
     
-  </div>
-</div><!--header-->
+
 <div>
   <h1><italic> Enjoy our diverse featuring menu <br />from East and the Best of South Indian Cuisine</italic></hi>
 </div>
+<header class='clickMe'><bold>House Specialty</bold </header>
 
-<header><bold>House Specialty</bold </header>
 <div class="House Specialty">
     <table>
       <tr>
@@ -50,14 +49,14 @@
     </table>
   </div>
 
-<header><bold>Taste of India</bold </header>
+<header class='clickMe'><bold>Taste of India</bold> </header>
  <div class="taste">
     <table>
       <tr>
         <td><img src="images/im1.jpeg" class="image" style="width:"180" height="180"></td>
         <td><img src="images/im2.jpeg" class="image" style=width:"180" height="180"></td>
         <td><img src="images/im3.jpeg" class="image" style=width:"180" height="180"></td>
-       
+       <ls>
       </tr>
         <tr>
           <td><p>Chicken Madras <b>$ 18.00</b>></p></td>
@@ -67,35 +66,17 @@
         </tr>
     </table>
   </div>
-  </div>
-  <div class="footer">
-  <div class="address">
-    <h3>The m&m's store</h3>
-    <p>Door no.23/24<br>
-       street 12,<br>
-       Amsterdam
-    </p>
-    <p>info@m&m.co.in<br>
-       ph :+311456775<br>
-       ph :+3198765443
-  </div>
-  
-  <div class="hours">
-    <h3>Opening Hours</h3>
-    <p>Morning: 6 to 1<br>
-       Afternoon: 2 to 6<br>
-       Evening: 7 to 11<br>
-    </p>
-  </div>
+  <script>
+    $('document').ready($('div').hide().show(1000));
 
-  <div class="social-media">
-    <h3>Like us on</h3>
-    <a href="https://www.facebook.com/" target="block"><img src="images/fbicon.png"></a>
-    <a href="https://www.twitter.com" target="block"><img src="images/twittericon.png"></a>
-  </div>
+    $('.clickMe').click( function(){
+      $('h1').toggle(1000);
+      $('document').ready($('.taste').hide().show(1000));
+      
+    });
+    
 
 
-</div><!--footer-->
-
+  </script>
 </body>
 </html>
