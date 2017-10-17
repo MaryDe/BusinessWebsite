@@ -1,11 +1,80 @@
 body{
-	margin: 0;
+
+
+background:url("cbackground.jpeg") no-repeat center center fixed;
+	background-size: cover;
 	padding: 0;
-    background-image:url("images/wooden-background.jpg");
+}
+
+ul {list-style: none;}
+li {list-style: none;}
+a {text-decoration: none;}
+p{text-align: center;}
+.logo{
+	
+	width: 100%;
+	padding: -1px 20px;
 
 }
+.navigation {
+   overflow: hidden;
+    background-color: #FF5050;
+    font-family: Arial;
+}
+
+.navigation a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navigation a:hover, .dropdown:hover .dropbtn {
+    background-color: #800000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: teal}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 header{
-	font-family: fantasy;
+	font-family: oblique;
 	position: absolute;
 	text-align: center;
 	font-size: 30px;
@@ -14,35 +83,49 @@ header{
 }
 h1{
 	margin: 30px;
-	font-family: fantasy;
+	font-family: oblique;
 	position: relative;
 	text-align: center;
 	font-size: 25px;
+<<<<<<< HEAD
 	color:black;
+=======
+	color:back;
+>>>>>>> JQuery
 	font-weight: bold;
-
 
 }
 p{
 	margin: 50px;
-	font-family: Verdana;
+	font-family: oblique;
 	position: relative;
 	text-align: center;
 	font-size: 20px;
 	color:back;
 	font-weight: normal;
 }
-
 td{
 	margin: 30px;
-	font-family: fantasy;
+	font-family: oblique;
 	position: relative;
 	text-align: center;
 	font-size: 20px;
 	color:back;
-	font-weight: bold;
+	font-weight: bold;	
 }
 
-.p{
-
 }
+img {
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+
